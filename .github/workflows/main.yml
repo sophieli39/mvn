@@ -6,17 +6,11 @@ on:
 
 jobs:
   build_and_test:
-
     runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v2
 
     - name: test
-      run: mvn test
-      
-    - name: run 
-      run: |
-       mvn compile
-       mvn exec:java -Dexec.mainClass="com.abccompany.app.App"  
+      run: mvn package
 
