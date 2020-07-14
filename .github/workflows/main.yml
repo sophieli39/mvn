@@ -1,0 +1,19 @@
+name: mvn_test
+
+on:
+ push:
+
+
+jobs:
+  build_and_test:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run
+      run: cd src
+       
+    - name: Build with Maven
+      run: mvn verify
