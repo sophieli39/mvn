@@ -12,5 +12,5 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: test
-       mvn exec:java -Dexec.mainClass="com.abccompany.app.App"  
+      run: mvn exec:java -Dexec.mainClass="com.abccompany.app.App"  
 
