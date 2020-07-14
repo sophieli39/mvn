@@ -12,8 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Run
-      run: cd src
-       
-    - name: Build with Maven
-      run: mvn verify
+    - name: test
+      run: mvn test
+
